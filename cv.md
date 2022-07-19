@@ -13,3 +13,43 @@ Of my strengths, I want to emphasize *purposefulness*, *punctuality*, *responsib
 ***
 ## My skills
 I study JavaScript, had experience with HTML, CSS, SCSS, jQuery, GULP, Bootstrap, in my work I used the BEM methodology for naming classes.
+***
+
+## JavaScript examples
+```
+function createPhoneNumber(numbers) {
+  let num1 = '';
+  let num2 = '';
+  let num3 = '';
+
+  numbers.forEach((value, index) => {
+
+    if (index === 0 || index === 1 || index === 2) {
+      num1 += value;
+    }
+
+    if (index === 3 || index === 4 || index === 5) {
+      num2 += value;
+    }
+
+    if (index === 6 || index === 7 || index === 8 || index === 9) {
+      num3 += value;
+    }
+  });
+
+  const result = `${num1}) ${num2}-${num3}`
+
+  return result;
+}
+```
+***
+
+## My work
+[https://github.com/SergeiKudlai/freshok.git][Freshok]
+***
+
+## Education
+Completed courses in layout. Passed part of the simulators at HTML Academy, also took free courses on FrontEnd development on different platforms more than once.
+
+## English language
+A-1, A-2 self-education, today I do my best to strengthen knowledge in English

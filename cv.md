@@ -1,5 +1,8 @@
 # **Kudlai Sergei**
 ***
+![My Photo](./my_foto.JPG "My Photo")
+
+***
 1. Сontacts
   1. Telegram : https://t.me/Kudlai_Sergei
   2. Email : s.kudlai@mail.ru

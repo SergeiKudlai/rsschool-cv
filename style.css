@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('./font/Roboto-Bold.woff2') format("woff2"),
+    url('./font/Roboto-Bold.woff') format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./font/Roboto-Regular.woff2') format("woff2"),
+    url('./font/Roboto-Regular.woff') format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -16,7 +34,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.4;
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
+  font-family: Roboto, "sans-serif";
   background-color: var(--white);
   color: var(--black);
 }
@@ -124,4 +142,79 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --red: #ff0000;
+  --blue: #0000ff;
+  --bg_color: #00000012;
+}
+
+.header {
+  background-color: var(--bg_color);
+}
+
+.header__container {
+  padding-top: 1.5rem;
+  position: relative;
+}
+
+.header__container::before {
+  content: '';
+  position: absolute;
+  top: 1.5rem;
+  left: 42%;
+  width: 30%;
+  height: 30%;
+  background: url('./img/frontend.jpg')no-repeat center/cover;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  column-gap: 3rem;
+}
+
+.header__foto {
+  border-radius: 50%;
+  border: 1px solid var(--black);
+  flex: 0 0 auto;
+}
+
+.header__nav {
+  flex: 1 1 auto;
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1rem;
+}
+
+.header__link {
+  font-size: 2rem;
+  transition: color 0.5s ease-in-out;
+  position: relative;
+  transition: color 1s ease-in-out;
+  outline: transparent;
+}
+
+.header__link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0.2rem;
+  background-color: var(--red);
+  transition: width 0.7s ease-in-out;
+}
+
+.header__link:hover::before {
+  width: 100%;
+}
+
+.header__link:focus {
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem forestgreen;
+}
+
+.header__link:hover {
+  color: var(--blue);
 }

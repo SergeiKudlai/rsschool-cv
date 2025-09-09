@@ -16,6 +16,8 @@ I am 33 years old, an engineer by education, the goal is to become a frontend de
 2. SCSS
 3. BEM
 4. GIT
+5. HTML
+6. CSS
 
 ###### Examples
 
@@ -52,3 +54,4 @@ function dataReverse(data) {
 ###### English level A-2
 
 ---
+

@@ -22,6 +22,7 @@
 
   <main class="main">
     <section class="description">
+      <h2 class="description__title">description</h2>
 
       I am 33 years old, an engineer by education, the goal is to become a frontend developer, motivated, punctual.
       Ready for new.
@@ -29,6 +30,8 @@
     </section>
 
     <section class="skills">
+            <h2 class="description__title">skills</h2>
+
       <ol>
         <li>JavaScript</li>
         <li>SCSS</li>
@@ -38,27 +41,29 @@
     </section>
 
     <section class="examples-code">
+        <h2 class="description__title">examples-code</h2>
+
       <pre>
         <code>
           function dataReverse(data) {
-  const RESULT_ARR = Array.from(Array(data.length / 8), () => []);
-  let x = 0;
+            const RESULT_ARR = Array.from(Array(data.length / 8), () =&gt; []);
+            let x = 0;
 
 
-  for (let y = 0; y < RESULT_ARR.length; y++) {
-    for (let i = x, k = 0; i < data.length; i++) {
-      if (k < 8) {
-        RESULT_ARR[y].push(data[i]);
-        k++;
-      } else {
-        x = i;
-        break;
-      }
-    }
-  }
+            for (let y = 0; y  &lt; RESULT_ARR.length; y++) {
+              for (let i = x, k = 0; i  &lt; data.length; i++) {
+              if (k  &lt; 8) {
+               RESULT_ARR[y].push(data[i]);
+                k++;
+              } else {
+                 x = i;
+                break;
+               }
+              }
+            }
 
-  return RESULT_ARR.reverse().flat();
-}
+            return RESULT_ARR.reverse().flat();
+          }
         </code>
       </pre>
     </section>

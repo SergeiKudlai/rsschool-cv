@@ -1,3 +1,10 @@
+section h2 {
+  visibility: hidden;
+  position: absolute;
+  height: 0;
+  width: 0;
+}
+
 .header {
   background-color: red;
 }
